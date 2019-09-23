@@ -8,6 +8,10 @@ class CustomForm implements Form
 {
     public function handleResponse(Player $player, $data): void
     {
+        if ($data === null) {
+            return;
+        }
+
         $shobon = ['(´・ω・｀)', '(｀・ω・´)', '|ω・｀)'];
         $steps = ['1', '10', '100', '千', '万'];
         $bool = $data[5] ? "オン" : "オフ";
