@@ -1,0 +1,19 @@
+name: FormExample
+main: Deceitya\FormExample\Main
+version: 1.0.0
+api: 3.9.0
+
+load: POSTWORLD
+author: deceitya
+description: Example plugin showing the new Form API
+website: https://github.com/deceitya/FormExample
+
+commands:
+  formex:
+    description: フォームを表示します。
+    usage: "/formex"
+    permission: formexample.command.formex
+permissions:
+  formexample.command.formex:
+    description: Allows the user to run the formex command
+    default: true
